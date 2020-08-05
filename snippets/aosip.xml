@@ -14,6 +14,10 @@
   <remote  name="devices"
            fetch="https://github.com/AOSiP-Devices"
            revision="refs/heads/ten" />
+  
+  <remote  name="custom"
+           fetch="https://github.com/AjithT11"
+           revision="ten" />
 
   <!-- AOSiP -->
   <!-- General -->
@@ -21,7 +25,7 @@
   <project path="bionic" name="platform_bionic" remote="aosip" />
   <project path="bootable/recovery" name="platform_bootable_recovery" remote="aosip" />
   <project path="development" name="platform_development" remote="aosip" />
-  <project path="manifest" name="platform_manifest" remote="aosip" />
+  <project path="manifest" name="4j17h/platform_manifest" remote="github" revision="ten"/>
 
   <!-- Build -->
   <project path="build/blueprint" name="platform_build_blueprint" remote="aosip" />
@@ -73,8 +77,8 @@
 
   <!-- Frameworks -->
   <project path="frameworks/av" name="platform_frameworks_av" remote="aosip" />
-  <project path="frameworks/base" name="platform_frameworks_base" remote="aosip" />
-  <project path="frameworks/native" name="platform_frameworks_native" remote="aosip" />
+  <project path="frameworks/base" name="platform_frameworks_base" remote="custom" />
+  <project path="frameworks/native" name="platform_frameworks_native" remote="custom" />
   <project path="frameworks/opt/net/ims" name="platform_frameworks_opt_net_ims" remote="aosip" />
   <project path="frameworks/opt/telephony" name="platform_frameworks_opt_telephony" remote="aosip" />
 
@@ -115,7 +119,7 @@
   <project path="packages/apps/Stk" name="platform_packages_apps_Stk" remote="aosip" />
   <project path="packages/apps/ThemePicker" name="platform_packages_apps_ThemePicker" remote="aosip" />
   <project path="packages/apps/UnifiedEmail" name="platform_packages_apps_UnifiedEmail" remote="aosip" />
-  <project path="packages/apps/Updater" name="platform_packages_apps_Updater" remote="aosip" />
+  <project path="packages/apps/Updater" name="platform_packages_apps_Updater" remote="custom" />
   <project path="packages/apps/WallpaperPicker2" name="platform_packages_apps_WallpaperPicker2" remote="aosip" />
   <project path="packages/inputmethods/LatinIME" name="platform_packages_inputmethods_LatinIME" remote="aosip" />
   <project path="packages/providers/ContactsProvider" name="platform_packages_providers_ContactsProvider" remote="aosip" />
@@ -147,9 +151,9 @@
   <project path="tools/apifinder" name="platform_tools_apifinder" remote="aosip" />
 
   <!-- Vendor -->
-  <project path="vendor/aosip" name="platform_vendor_aosip" remote="aosip" />
+  <project path="vendor/aosip" name="platform_vendor_aosip" remote="custom" />
   <project path="vendor/codeaurora/telephony" name="platform_vendor_codeaurora_telephony" remote="aosip" />
-  <project path="vendor/overlay" name="platform_vendor_overlay" remote="aosip" />
+  <project path="vendor/overlay" name="platform_vendor_overlay" remote="custom" />
   <project path="vendor/pixelgapps" name="TeamIllusion/platform_vendor_pixelgapps" remote="gitlab" revision="ten" />
   <project path="vendor/qcom/opensource/cryptfs_hw" name="platform_vendor_qcom_opensource_cryptfs_hw" remote="aosip" />
 </manifest>
